@@ -15,10 +15,8 @@ class Register extends commando.Command {
     }
     async run(message) {
         var fs = require('fs');
-        fs.readFile('UserDatabase.json', 'utf8', function readFileCallback(err, data) {
-            if (err) {
-                console.log(err);
-            } else {
+        fs.readFile('UserDatabase.json', function readFileCallback(err, data) {
+            if (err) throw err;
                 obj = JSON.parse(data)
                 if (obj.hasOwnProperty(message.member.user.tag)) {
                     message.reply(" is already registered")
@@ -30,7 +28,7 @@ class Register extends commando.Command {
                     })
                 }
             }
-        });
+        );
     }
 }
 
