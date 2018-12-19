@@ -2,8 +2,8 @@ const Commando = require('discord.js-commando');
 const bot = new Commando.Client();
 
 bot.registry.registerGroups([
-    ['rpg'],
-    ['helpers']
+    ['rpg', 'RPG'],
+    ['helpers', 'Helper']
 ]);
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
