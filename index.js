@@ -1,5 +1,8 @@
 const Commando = require('discord.js-commando');
-const bot = new Commando.Client();
+const bot = new Commando.Client({
+    unknownCommandResponse: false,
+    disableEveryone: true
+});
 
 bot.registry.registerGroups([
     ['rpg', 'RPG'],
