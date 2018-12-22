@@ -6,7 +6,9 @@ var msgs = [
     "Sometimes you've just gotta praise the sun.",
     "I wish I knew more to say.",
     "Did you know it takes about 400 adult men to make a sword out of blood?",
-    "I was a human like you once, then I was progammed into a bot"
+    "I was a human like you once, then I was progammed into a bot",
+    "I'm now 1% less hack proof!",
+    "I AM ERROR"
     ];
 
 class Chat extends commando.Command {
