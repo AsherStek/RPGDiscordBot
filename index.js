@@ -11,4 +11,4 @@ bot.registry.registerGroups([
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
-bot.login('NTI0NDAwMDg5NTQ1MDQ4MDY0.Dv3Thw.eYXrPgm9RMcjmuWmzPxBOGtyV6o');
+bot.login();
